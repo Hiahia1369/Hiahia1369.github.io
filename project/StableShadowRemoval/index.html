@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="descriptions">
+  <meta name="keywords" content="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OmniSR</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <!-- <meta name="google-site-verification" content="DM3NGsK5CfRuZPtync3hP0EUCJJb_oFfAl_czOaK-PE" /> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="js/dics/dics.original.css">
+  <script src="js/dics/dics.original.js"></script>
+  <script src="js/event_handler.js"></script> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:300,400,500,600,700" rel="stylesheet"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <!-- <h1 class="title is-1 publication-title" style="font-size: 30px; font-weight: bold">
+            
+          </h1> -->
+              <h2 class="title is-3" style="white-space: nowrap;">Detail-Preserving Latent Diffusion for Stable Shadow Removal
+                Direct and Indirect Lighting </h2>
+              <h2 class="conference">CVPR 2025</h2>
+              <!-- <span style="color: rgb(235, 83, 71)">S</span><span style="color: rgb(245, 149, 79)">u</span><span style="color: rgb(240, 194, 66)">r</span><span style="color: rgb(159, 206, 99)">f</span><span style="color: rgb(95, 210, 199)">e</span><span style="color: rgb(63, 142, 247)">l</span><span style="color: rgb(151, 112, 247)">s</span></h2> -->
+              <!-- <h2 class="conference">ACM SIGGRAPH 2024</h2> -->
+              <div class="is-size-6 publication-authors">
+                <span class="author-block">
+                  <a href="https://superxjm.github.io/">Jiamin Xu</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="/">Yuxin Zheng</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="">Zelong Li</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Chi Wang</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Renshu Gu</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="http://www.cad.zju.edu.cn/home/weiweixu/index.htm">Weiwei Xu</a><sup>2</sup>
+                </span>
+                <span class="author-block"></span>
+                  <a href="https://igame.hdu.edu.cn/team-xugang.html">Gang Xu</a><sup>1<sup>†</sup></sup>
+                </span>
+                <!-- <span class="author-block">
+              <a href="">a6</a><sup>1</sup>
+            </span> -->
+              </div>
+
+              <!-- <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Joint first authors; </span>
+            <span class="author-block"><sup>†</sup>Corresponding author</span>
+          </div> -->
+
+              <div class="is-size-6 publication-authors">
+                <span class="author-block"><sup>1</sup>Hangzhou Dianzi University; </span>
+                <span class="author-block"><sup>2</sup>Zhejiang University; </span>
+              </div>
+              <br />
+              <!-- <img src="static/images/univ_logo.jpg" class="univ_logo"> -->
+              <div class="columns is-centered">
+
+                <div class="column has-text-centered">
+                  <div class="publication-links">
+                    <!-- PDF Link. -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2412.17630"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+                  
+                    <!-- Code Link. -->
+                    <span class="link-block">
+                      <a href="https://github.com/Hiahia1369/StableShadowRemoval"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                      </a>
+                    </span>
+                    <!-- Dataset Link. -->
+                    <span class="link-block">
+                      <a href="https://1drv.ms/f/c/293105fdd25c43e1/Ehs2NWKPVmFPrnuudfVUM8EBC3DzwOuKTcm_kmmM4h17dg?e=Dqpb7u"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="far fa-images"></i>
+                        </span>
+                        <span>Result</span>
+                      </a>
+                    </span>
+
+                  </div>
+
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-4">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+          &nbsp&nbsp&nbsp&nbsp Achieving high-quality shadow removal with strong generalizability 
+          is challenging in scenes with complex global illumination. Due to the limited 
+          diversity in shadow removal datasets, current methods are prone to overfitting 
+          training data, often leading to reduced performance on unseen cases. To address this, 
+          we leverage the rich visual priors of a pre-trained Stable Diffusion (SD) model and 
+          propose a two-stage fine-tuning pipeline to adapt the SD model for stable and efficient 
+          shadow removal. In the first stage, we fix the VAE and fine-tune the denoiser in latent 
+          space, which yields substantial shadow removal but may lose some high-frequency details.
+          To resolve this, we introduce a second stage, called the detail injection stage. 
+          This stage selectively extracts features from the VAE encoder to modulate the decoder, 
+          injecting fine details into the final results. Experimental results show that our method 
+          outperforms state-of-the-art shadow removal techniques. The cross-dataset 
+          evaluation further demonstrates that our method generalizes effectively to unseen data, 
+          enhancing the applicability of shadow removal methods.
+        </p>
+      </div>
+
+      <section class="hero teaser">
+        <div class="container is-max-desktop">
+          <img src="static/images/teaser.png" width="700">
+        </div>
+      </section>
+
+      <br />
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-4">Overview</h2>
+          <div class="column content">
+            <!-- <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+            <img style="margin-top: -10px;" src="static/images/pipeline.png">
+
+            <div class="content has-text-justified">
+              <p>
+                <strong>Our proposed network.</strong> We propose a two-stage shadow removal network based on Stable Diffusion (SD). 
+                (1) In the first stage, as shown in the bottom half, we fine-tune the pre-trained UNet in SD within the latent space 
+                defined by SD's pre-trained VAE (E and D). We found that the pre-trained latent space can effectively represent 
+                shadow-free images. (2) In the second stage, as shown in the top half, we modulate the VAE decoder D by selectively 
+                adding features from the VAE encoder E using a Detail Injection Model (DIM). The model consists of multiple RRDB 
+                layers, which inject shadow-free texture details into the decoder features. With these two stages, our proposed 
+                network can generate high-quality, shadow-free images that preserve fine details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <br/> -->
+      <h2 class="title is-4">Comparison results</h2>
+
+      <img src="static\images\comparison_table.png" alt="">
+      <div class="table_text">
+        <p><strong>Quantitative comparisons on ISTD+, SRD, INS, and WSRD+ datasets.</strong>
+          Best results are highlighted as <span class="first">1st</span> , <span class="second">2nd</span> and <span class="third">3rd</span>.
+        </p>
+      </div>
+      <br />
+
+      <h3 class="title is-5">ISTD+ results</h3>
+      <div class="image-columns">
+
+        <div class="image-column">
+          <div id="compare1" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_ISTD+\Origin\101-3.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_ISTD+\Ours\101-3.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="image-column">
+          <div id="compare2" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_ISTD+\Origin\101-3.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_ISTD+\InstanceShadow\101-3.png">
+                <div class="bal-beforePosition beforeLabel">
+                  InstanceShadow
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare3" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_ISTD+\Origin\101-3.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_ISTD+\HomoFormer\101-3.png">
+                <div class="bal-beforePosition beforeLabel">
+                  HomoFormer
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare4" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_ISTD+\Origin\101-3.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_ISTD+\BMNet\101-3.png">
+                <div class="bal-beforePosition beforeLabel">
+                  BMNet
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="image-columns">
+
+        <div class="image-column">
+          <div id="compare5" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_ISTD+\Origin\115-6.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_ISTD+\Ours\115-6.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="image-column">
+          <div id="compare6" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_ISTD+\Origin\115-6.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_ISTD+\InstanceShadow\115-6.png">
+                <div class="bal-beforePosition beforeLabel">
+                  InstanceShadow
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare7" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_ISTD+\Origin\115-6.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_ISTD+\HomoFormer\115-6.png">
+                <div class="bal-beforePosition beforeLabel">
+                  HomoFormer
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare8" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_ISTD+\Origin\115-6.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_ISTD+\BMNet\115-6.png">
+                <div class="bal-beforePosition beforeLabel">
+                  BMNet
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <h3 class="title is-5">SRD results</h3>
+      <div class="image-columns">
+
+        <div class="image-column">
+          <div id="compare9" class="bal-container-small">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\DSCF0519.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\Ours\DSCF0519.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="image-column">
+          <div id="compare10" class="bal-container-small">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\DSCF0519.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\OmniSR\DSCF0519.png">
+                <div class="bal-beforePosition beforeLabel">
+                  OmniSR
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare11" class="bal-container-small">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\DSCF0519.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\HomoFormer\DSCF0519.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                  HomoFormer
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare12" class="bal-container-small">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\DSCF0519.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\Des3\DSCF0519.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                  Des3
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="image-columns">
+
+        <div class="image-column">
+          <div id="compare13" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\IMG_6080.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\Ours\IMG_6080.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare14" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\IMG_6080.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\OmniSR\IMG_6080.png">
+                <div class="bal-beforePosition beforeLabel">
+                  OmniSR
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare15" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\IMG_6080.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\HomoFormer\IMG_6080.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                  HomoFormer
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare16" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\IMG_6080.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\Des3\IMG_6080.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                  Des3
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- <br />
+      <div class="image-columns">
+
+        <div class="image-column">
+          <div id="compare25" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\_MG_2442.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\Ours\_MG_2442.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare26" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\_MG_2442.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\OmniSR\_MG_2442.png">
+                <div class="bal-beforePosition beforeLabel">
+                  OmniSR
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare27" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\_MG_2442.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\HomoFormer\_MG_2442.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                  HomoFormer
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare28" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\compare_SRD\Origin\_MG_2442.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_SRD\Des3\_MG_2442.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                  Des3
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <br />
+      <h3 class="title is-5">INS results</h3>
+
+      <div class="image-columns">
+        <div class="image-column">
+          <div id="compare17" class="bal-container-origin">
+            <div class="bal-after">
+              <img src="static\images\compare_INS\Origin\rgb_177.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_INS\Ours\rgb_177.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare18" class="bal-container-origin">
+            <div class="bal-after">
+              <img src="static\images\compare_INS\Origin\rgb_177.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_INS\OmniSR\rgb_177.png">
+                <div class="bal-beforePosition beforeLabel">
+                  OmniSR
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare19" class="bal-container-origin">
+            <div class="bal-after">
+              <img src="static\images\compare_INS\Origin\rgb_177.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_INS\HomoFormer\rgb_177.png">
+                <div class="bal-beforePosition beforeLabel">
+                  HomoFormer
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare20" class="bal-container-origin">
+            <div class="bal-after">
+              <img src="static\images\compare_INS\Origin\rgb_177.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_INS\ShadowDiffusion\rgb_177.png">
+                <div class="bal-beforePosition beforeLabel">
+                  ShadowDiffusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="image-columns">
+        <div class="image-column">
+          <div id="compare21" class="bal-container-origin">
+            <div class="bal-after">
+              <img src="static\images\compare_INS\Origin\rgb_484.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_INS\Ours\rgb_484.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare22" class="bal-container-origin">
+            <div class="bal-after">
+              <img src="static\images\compare_INS\Origin\rgb_484.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_INS\OmniSR\rgb_484.png">
+                <div class="bal-beforePosition beforeLabel">
+                  OmniSR
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare23" class="bal-container-origin">
+            <div class="bal-after">
+              <img src="static\images\compare_INS\Origin\rgb_484.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_INS\HomoFormer\rgb_484.png">
+                <div class="bal-beforePosition beforeLabel">
+                  HomoFormer
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare24" class="bal-container-origin">
+            <div class="bal-after">
+              <img src="static\images\compare_INS\Origin\rgb_484.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\compare_INS\ShadowDiffusion\rgb_484.png">
+                <div class="bal-beforePosition beforeLabel">
+                  ShadowDiffusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <h2 class="title is-4">Comparison cross-dataset results</h2>
+      <div class="content has-text-justified">
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;To evaluate the generalizability of our approach, we conduct a cross-dataset evaluation. Specifically, 
+          we train our model on the training set of one dataset and test it on the testing set of a different dataset. 
+          Typically, training and testing data within the same dataset share similar shadow patterns, backgrounds, or 
+          lighting conditions. This cross-dataset evaluation presents a more challenging test for shadow removal methods 
+          and provides a more stringent measure of generalizability. We use A→B to denote training on dataset A and 
+          testing on dataset B.
+        </p>
+      </div>
+
+      <div class="table_image">
+        <img src="static\images\crossdata_table.png" alt="">
+      </div>
+      <div class="table_text">
+        <p><strong>Cross-dataset evaluation. </strong>
+          ISTD+→SRD means training on the ISTD+ dataset and tesing on the SRD dataset.
+        </p>
+      </div>
+      <br/>
+
+      <h3 class="title is-5">ISTD+ → SRD</h3>
+      <div class="image-columns">
+        <div class="image-column">
+          <div id="compare29" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_istd+_srd\origin\IMG_6573.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_istd+_srd\our\IMG_6573.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare30" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_istd+_srd\origin\IMG_6573.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_istd+_srd\DeS3_resize\IMG_6573.png">
+                <div class="bal-beforePosition beforeLabel">
+                  DeS3
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare31" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_istd+_srd\origin\IMG_6573.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_istd+_srd\Refusion\IMG_6573.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Refusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare32" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_istd+_srd\origin\IMG_6573.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_istd+_srd\ShadowDiffusion_resize\IMG_6573.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                  ShadowDiffusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="image-columns">
+        <div class="image-column">
+          <div id="compare33" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_istd+_srd\origin\IMG_6661.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_istd+_srd\our\IMG_6661.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare34" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_istd+_srd\origin\IMG_6661.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_istd+_srd\DeS3_resize\IMG_6661.png">
+                <div class="bal-beforePosition beforeLabel">
+                  DeS3
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare35" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_istd+_srd\origin\IMG_6661.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_istd+_srd\Refusion\IMG_6661.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Refusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare36" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_istd+_srd\origin\IMG_6661.jpg">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_istd+_srd\ShadowDiffusion_resize\IMG_6661.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                  ShadowDiffusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <h3 class="title is-5">SRD → ISTD+</h3>
+      <div class="image-columns">
+        <div class="image-column">
+          <div id="compare37" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_srd_istd+\origin\91-3.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_srd_istd+\our\91-3.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare38" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_srd_istd+\origin\91-3.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_srd_istd+\OmniSR\91-3.png">
+                <div class="bal-beforePosition beforeLabel">
+                  OmniSR
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare39" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_srd_istd+\Refusion\91-3.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_srd_istd+\Refusion\91-3.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Refusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare40" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_srd_istd+\origin\91-3.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_srd_istd+\ShadowDiffusion\91-3.png">
+                <div class="bal-beforePosition beforeLabel">
+                  ShadowDiffusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+
+      <h3 class="title is-5">INS → WSRD</h3>
+      <div class="image-columns">
+        <div class="image-column">
+          <div id="compare41" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_ins_wsrd\origin\0026.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_ins_wsrd\our\0026.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare42" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_ins_wsrd\origin\0026.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_ins_wsrd\OmniSR\0026.png">
+                <div class="bal-beforePosition beforeLabel">
+                  OmniSR
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare43" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_ins_wsrd\origin\0026.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_ins_wsrd\Refusion\0026.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Refusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare44" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_ins_wsrd\origin\0026.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_ins_wsrd\ShadowDiffusion\0026.png">
+                <div class="bal-beforePosition beforeLabel">
+                  ShadowDiffusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="image-columns">
+        <div class="image-column">
+          <div id="compare45" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_ins_wsrd\origin\0000.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_ins_wsrd\our\0000.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Ours
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare46" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_ins_wsrd\origin\0000.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_ins_wsrd\OmniSR\0000.png">
+                <div class="bal-beforePosition beforeLabel">
+                  OmniSR
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare47" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_ins_wsrd\origin\0000.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_ins_wsrd\Refusion\0000.png">
+                <div class="bal-beforePosition beforeLabel">
+                  Refusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-column">
+          <div id="compare48" class="bal-container-middle">
+            <div class="bal-after">
+              <img src="static\images\cross_ins_wsrd\origin\0000.png">
+              <div class="bal-afterPosition afterLabel">
+                Origin
+              </div>
+            </div>
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static\images\cross_ins_wsrd\ShadowDiffusion\0000.png">
+                <div class="bal-beforePosition beforeLabel">
+                  ShadowDiffusion
+                </div>
+              </div>
+            </div>
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+    </div>
+  </section>
+
+
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-4">BibTeX</h2>
+      <pre><code>
+        @inproceedings{xu2024omnisr,
+        title={OmniSR: Shadow Removal under Direct and Indirect Lighting},
+        author={Xu, Jiamin and Li, Zelong and Zheng, Yuxin and Huang, Chenyu and Gu, Renshu and Xu, Weiwei and Xu, Gang},
+        booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+        year={2025}
+      </code></pre>
+    </div>
+  </section> -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <p>
+          This page is modified from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> template.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/js/script.js"></script>
+  <script>
+    new BeforeAfter({
+      id: '#compare1'
+    });
+    new BeforeAfter({
+      id: '#compare2'
+    });
+    new BeforeAfter({
+      id: '#compare3'
+    });
+    new BeforeAfter({
+      id: '#compare4'
+    });
+    new BeforeAfter({
+      id: '#compare5'
+    });
+    new BeforeAfter({
+      id: '#compare6'
+    });
+    new BeforeAfter({
+      id: '#compare7'
+    });
+    new BeforeAfter({
+      id: '#compare8'
+    });
+    new BeforeAfter({
+      id: '#compare9'
+    });
+    new BeforeAfter({
+      id: '#compare10'
+    });
+    new BeforeAfter({
+      id: '#compare11'
+    });
+    new BeforeAfter({
+      id: '#compare12'
+    });
+    new BeforeAfter({
+      id: '#compare13'
+    });
+    new BeforeAfter({
+      id: '#compare14'
+    });
+    new BeforeAfter({
+      id: '#compare15'
+    });
+    new BeforeAfter({
+      id: '#compare16'
+    });
+    new BeforeAfter({
+      id: '#compare17'
+    });
+    new BeforeAfter({
+      id: '#compare18'
+    });
+    new BeforeAfter({
+      id: '#compare19'
+    });
+    new BeforeAfter({
+      id: '#compare20'
+    });
+    new BeforeAfter({
+      id: '#compare21'
+    });
+    new BeforeAfter({
+      id: '#compare22'
+    });
+    new BeforeAfter({
+      id: '#compare23'
+    });
+    new BeforeAfter({
+      id: '#compare24'
+    });
+    // new BeforeAfter({
+    //   id: '#compare25'
+    // });
+    // new BeforeAfter({
+    //   id: '#compare26'
+    // });
+
+    // new BeforeAfter({
+    //   id: '#compare27'
+    // });
+    // new BeforeAfter({
+    //   id: '#compare28'
+    // });
+    new BeforeAfter({
+      id: '#compare29'
+    });
+    new BeforeAfter({
+      id: '#compare30'
+    });
+    new BeforeAfter({
+      id: '#compare31'
+    });
+    new BeforeAfter({
+      id: '#compare32'
+    });
+    new BeforeAfter({
+      id: '#compare33'
+    });
+    new BeforeAfter({
+      id: '#compare34'
+    });
+    new BeforeAfter({
+      id: '#compare35'
+    });
+    new BeforeAfter({
+      id: '#compare36'
+    });
+    new BeforeAfter({
+      id: '#compare37'
+    });
+    new BeforeAfter({
+      id: '#compare38'
+    });
+    new BeforeAfter({
+      id: '#compare39'
+    });
+    new BeforeAfter({
+      id: '#compare40'
+    });
+    new BeforeAfter({
+      id: '#compare41'
+    });
+    new BeforeAfter({
+      id: '#compare42'
+    });
+    new BeforeAfter({
+      id: '#compare43'
+    });
+    new BeforeAfter({
+      id: '#compare44'
+    });
+    new BeforeAfter({
+      id: '#compare45'
+    });
+    new BeforeAfter({
+      id: '#compare46'
+    });
+    new BeforeAfter({
+      id: '#compare47'
+    });
+    new BeforeAfter({
+      id: '#compare48'
+    });
+    new BeforeAfter({
+      id: '#compare49'
+    });
+    new BeforeAfter({
+      id: '#compare50'
+    });
+    new BeforeAfter({
+      id: '#compare51'
+    });
+    new BeforeAfter({
+      id: '#compare52'
+    });
+
+
+   
+  </script>
+
+</body>
+
+</html>
